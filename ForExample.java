@@ -1,30 +1,17 @@
 public class ForExample {
     public static void main(String[] args) {
-        int i;
+        int row,column;
 
-        for(i=1;i<=7;i++) // i=i+1  i=1+1  i=2
+        for(row=1;row<=3;row++) // 1<=3  T  2<=3 T  3<=3 T 4<=3
         {
-            System.out.println("My name is Ankita");
+            for (column=1;column<=5;column++) // 1<=5 T
+            {
+                System.out.println(column);
+            }
+            System.out.println();
         }
     }
 }
-
-//i=1   i<=10 1<=10 true
-//    My name is Ankita
-//i=2   2<=10  true
-//        My name is Ankita
-//i=3   3<=10  true
-//        My name is Ankita
-//i=4   4<=10   true
-//        My name is Ankita
-//i=5   5<=10  true
-//        My name is Ankita
-//        .
-//        .
-//
-//i=10   10<=10 true
-//        My name is Ankita
-//i=11   11<=10  false
-
-//len = product.lenth();
-//len=7
+// 1 2 3 4 5
+// 1 2 3 4 5
+// 1 2 3 4 5
