@@ -1,17 +1,32 @@
-public class ForExample {
-    public static void main(String[] args) {
-        int row,column;
+import java.util.Scanner;
 
-        for(row=1;row<=3;row++) // 1<=3  T  2<=3 T  3<=3 T 4<=3
-        {
-            for (column=1;column<=5;column++) // 1<=5 T
-            {
-                System.out.println(column);
+public class ForExample {
+    void designPattern(int r,int c){
+        for(int row=1;row<=r;row++){ // r=4
+            for (int column=1;column<=c;column++){ // c=4
+                System.out.print("* ");
             }
             System.out.println();
         }
     }
+    public static void main(String[] args) {
+        int rowValue,columnValue;
+        ForExample obj = new ForExample();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the value of Row and Column:");
+        rowValue = scanner.nextInt(); // 4
+        columnValue = scanner.nextInt(); // 4
+        obj.designPattern(rowValue,columnValue);
+    }
 }
-// 1 2 3 4 5
-// 1 2 3 4 5
-// 1 2 3 4 5
+//*
+//* *
+//* * *
+//* * * *
+//* * * * *
+//* * * * * *
+//
+//* * * *
+//* * * *
+//* * * *
+//* * * *
