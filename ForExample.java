@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class ForExample {
     void designPattern(int r,int c){
         for(int row=1;row<=r;row++){ // r=4
@@ -30,3 +29,5 @@ public class ForExample {
 //* * * *
 //* * * *
 //* * * *
+
+// while do while switch inheritance continue and break
