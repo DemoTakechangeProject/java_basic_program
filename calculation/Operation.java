@@ -1,7 +1,9 @@
 package calculation;
-public class Operation {
+import access_package.AccessPackageClass;
+public class Operation extends AccessPackageClass {
     public void addition(int first,int second){
         System.out.println("Addition :"+(first+second));
+        display();
     }
     public void subtraction(int first,int second){
         System.out.println("Subtraction :"+(first-second));
